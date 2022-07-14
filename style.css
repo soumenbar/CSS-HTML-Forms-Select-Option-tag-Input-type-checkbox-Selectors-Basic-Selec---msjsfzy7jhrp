@@ -1,9 +1,186 @@
 *{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    list-style: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+padding: 0;
+box-sizing: border-box; 
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;   
 }
 
-/* Write CSS code below */
+main{
+    height: 1000px;
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 300px 700px;
+    
+}
+.main-content{
+    display: flex; 
+        height: max-content;
+    
+}
+
+.left-section, .right-section{
+    height: 100%;
+    width: 90%;
+}
+.left-section{
+    width: 300px;
+    grid-column: span;
+    background-color: #242531;
+}
+
+.right-section{
+    width: 700px;
+    grid-column: span;
+    background-color: #f7f7f7;
+}
+
+section{
+    display: block;
+}
+.left-content{
+    color: white;
+    padding: 1rem;
+}
+
+
+.profile img{
+    display: block;
+    margin: auto;
+    border: 5px solid white;
+    border-radius: 30%;
+    width: 60%;
+    
+}
+li{
+    color: none;
+}
+
+.name{
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.02px;
+    padding: 0.8rem;
+    margin-bottom: -10px;
+}
+
+.description{
+    font-size: 0.75rem;
+text-align: center;
+padding: 1rem;
+}
+.designation{
+font-size: 1rem;
+text-align: center;
+text-transform: uppercase;
+padding-bottom: 0.5rem;
+font-weight: 700;
+color: rgb(142, 187, 247);
+}
+hr{
+    border: 1px solid white;
+}
+.icon{
+   color: none;
+}
+.social-media{
+text-align: center;
+}
+.social-media li{
+    display: inline-block;
+}
+.fa{
+    color: rgb(133, 124, 223);
+    padding: 1rem;
+}
+.personal-details{
+    text-align: left;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.personal-details .icon{
+    margin-top: -21px;
+    font-size: small;
+}
+.personal-details span{
+    color: white;
+}
+.skills{
+    font-size: 0.75rem;
+    text-align: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+
+}
+.skill-name{
+    font-size: 0.65rem;
+    font-weight: 0.65rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    padding-top: 0.6rem;
+}
+.progress-bar{
+border: 1px solid white;
+height: 4px;
+}
+.right-main-content{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.right-title{
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 700;
+    padding: 0.5rem;
+    letter-spacing: 1px;
+}
+.sub-title{
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: 650;
+}
+
+  @media (max-width:  673px) {
+      .main-content{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);  ;
+        grid-gap: 10px;
+        padding: 10px;
+      }
+    .left-section{
+        width: 100%;
+        height: auto;
+    }
+    
+    .right-section{
+        width: 100%;
+
+    }
+    .profile img{
+        display: block;
+        margin: auto;
+        border: 5px solid white;
+        border-radius: 30%;
+        width: 40%;
+        
+    }
+    .skills{
+        font-size: 0.65rem;
+        text-align: center;
+     
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    
+    }
+    
+  }
